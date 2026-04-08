@@ -1,0 +1,40 @@
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	background-color:rgb(255, 192, 203);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.menu {
+	display: flex;
+	gap: 2rem;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 1.3rem;
+    color:black;
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu a:hover {
+	color: #fff;
+}
