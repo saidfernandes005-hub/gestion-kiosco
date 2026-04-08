@@ -76,3 +76,76 @@
     text-transform: uppercase;
     border-radius: 20px;
 }
+
+/****main****/
+.main {
+background-color: rgb(250,250,230);
+}
+
+
+/****categorias****/
+
+#container-sec-categorias {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	margin-bottom: 48px;
+}
+
+.container-categorias {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 45px;
+}
+
+.carta-cafes_y_dulces {
+    text-align: center;
+    height: 320px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:linear-gradient(100deg, #00000071, #1d1a1a62), url(img/cafe.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.carta-bebidas_y_helados {
+    text-align: center;
+    height: 320px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:linear-gradient(100deg, #00000071, #1d1a1a62), url(img/bebida.jpg);
+    background-size:cover; 
+    background-position: center;
+}
+
+.carta-snacks_y_comida {
+    text-align: center;
+    height: 320px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	background-image:linear-gradient(100deg, #00000071, #1d1a1a62), url(img/comida.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-categorias p {
+	font-size: 40px;
+	color: #ffffff;
+	text-transform: capitalize;
+}
+
+.container-categorias span {
+	font-size: 25px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.container-categorias span:hover {
+	color: rgb(255, 190, 200);
+}
