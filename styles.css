@@ -1,25 +1,32 @@
-.logo{
-    font-size: 1.5rem;
-    font-weight: bold;
+/****header****/
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-header {
+.container-logo h1 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+/****navbar****/
+
+.container-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-	background-color:rgb(255, 192, 203);
-}
-
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 0;
+	background-color:rgb(255,190,200);
+    padding: 5px;
 }
 
 .menu {
 	display: flex;
-	gap: 2rem;
+	gap: 20px;
 }
 
 .menu li {
@@ -28,13 +35,44 @@
 
 .menu a {
 	text-decoration: none;
-	font-size: 1.3rem;
+	font-size: 20px;
     color:black;
 	font-weight: 600;
 	text-transform: uppercase;
-	position: relative;
 }
 
 .menu a:hover {
-	color: #fff;
+	color: white;
+}
+
+/****banner****/
+#banner {
+    background-image: linear-gradient(100deg, #1b1b1b, #36363683), url("img/food_truck.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.contenido-banner {
+    text-align: center;
+}
+
+.contenido-banner h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.contenido-banner a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255,190,200);
+    padding: 12px 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
 }
