@@ -149,3 +149,72 @@ background-color: rgb(250,250,230);
 .container-categorias span:hover {
 	color: rgb(255, 190, 200);
 }
+
+/**** estilos para carrito.html****/
+.main-carrito {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.seccion-carrito {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.seccion-carrito h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #333333;
+}
+/**** mensaje en caso de no agregar productos****/
+.msj-vacio {
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+.carrito-resumen {
+    border-top: 2px solid rgb(255, 190, 200);
+    padding-top: 20px;
+}
+
+.carrito-resumen p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+/****boton para completar la compra****/
+.btn-comprar {
+    display: inline-block;
+    background-color: rgb(255, 190, 200);
+    color: black;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #f896a8;
+    transform: scale(1.05);
+}
+
+.volver {
+    display: block;
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
