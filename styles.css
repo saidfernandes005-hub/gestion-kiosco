@@ -309,3 +309,21 @@ background-color: rgb(250,250,230);
     background-color: #f896a8;
     transform: scale(1.05); /* Crece un 5% al pasar el mouse */
 }
+
+/**** Efecto de deslizamiento suave para toda la página ****/
+html {
+    scroll-behavior: smooth;
+}
+
+/**** Diseño de los enlaces "ver mas..." ****/
+.link-ver-mas {
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none; /* Esto quita la típica línea azul fea de los enlaces */
+    transition: 0.3s;
+}
+
+.link-ver-mas:hover {
+    color: rgb(255, 190, 200); /* Tu color pastel al pasar el mouse */
+}
