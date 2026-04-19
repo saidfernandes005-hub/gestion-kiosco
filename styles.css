@@ -1,5 +1,4 @@
 /****header****/
-
 .container-logo {
     display: flex;
     align-items: center;
@@ -9,52 +8,51 @@
 .container-logo h1 a {
     text-decoration: none;
     color: #000;
-    font-size: 45px;
+    font-size: 2.8125rem;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    letter-spacing: -0.0625rem;
 }
 
 /****navbar****/
-
 .container-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-	background-color:rgb(255,190,200);
-    padding: 5px;
+    background-color: rgb(255, 190, 200);
+    padding: 0.3125rem;
 }
 
 .menu {
-	display: flex;
-	gap: 20px;
+    display: flex;
+    gap: 1.25rem;
 }
 
 .menu li {
-	list-style: none;
+    list-style: none;
 }
 
 .menu a {
-	text-decoration: none;
-	font-size: 20px;
-    color:black;
-	font-weight: 600;
-	text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .menu a:hover {
-	color: white;
+    color: white;
 }
 
 /****banner****/
 #banner {
     background-image: linear-gradient(100deg, #1b1b1b, #36363683), url("img/food_truck.jpg");
-    height: 300px;
+    height: 18.75rem;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
 }
 
 .contenido-banner {
@@ -63,91 +61,126 @@
 
 .contenido-banner h1 {
     color: white;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 500;
 }
 
 .contenido-banner a {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     text-decoration: none;
     color: white;
-    background-color: rgb(255,190,200);
-    padding: 12px 20px;
+    background-color: rgb(255, 190, 200);
+    padding: 0.75rem 1.25rem;
     text-transform: uppercase;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 /****main****/
 .main {
-background-color: rgb(250,250,230);
+    background-color: rgb(250, 250, 230);
 }
 
-
 /****categorias****/
-
 #container-sec-categorias {
-	display: flex;
-	flex-direction: column;
-    align-items: center;
-	margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
 .container-categorias {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 1.25rem;
 }
 
-.carta-cafes_y_dulces {
-    text-align: center;
-    height: 320px;
-    border-radius: 25px;
+.carta {
+    height: 25rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background-image:linear-gradient(100deg, #00000071, #1d1a1a62), url(img/cafe.png);
+    border-radius: 2rem;
+    gap: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.carta:hover {
+    transform: scale(1.02);
+}
+
+.cafes_y_dulces {
+    background-image: linear-gradient(#00000080, #00000080),
+        url('img/cafe.png');
     background-size: cover;
     background-position: center;
 }
 
-.carta-bebidas_y_helados {
-    text-align: center;
-    height: 320px;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image:linear-gradient(100deg, #00000071, #1d1a1a62), url(img/bebida.jpg);
-    background-size:cover; 
-    background-position: center;
-}
-
-.carta-snacks_y_comida {
-    text-align: center;
-    height: 320px;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-	background-image:linear-gradient(100deg, #00000071, #1d1a1a62), url(img/comida.jpg);
+.bebidas_y_helados {
+    background-image: linear-gradient(#00000080, #00000080),
+        url('img/bebida.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.container-categorias p {
-	font-size: 40px;
-	color: #ffffff;
-	text-transform: capitalize;
+.snacks_y_comida {
+    background-image: linear-gradient(#00000080, #00000080),
+        url('img/comida.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-.container-categorias span {
-	font-size: 25px;
-	color: #ffffff;
-	cursor: pointer;
+.carta h3 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    position: relative;
+    margin: 0;
 }
 
-.container-categorias span:hover {
-	color: rgb(255, 190, 200);
+.carta h3::after {
+    content: '';
+    width: 2.5rem;
+    height: 0.125rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.link-ver-mas {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link-ver-mas:hover {
+    color: #e3b04b;
+    font-weight: bold;
+}
+
+/****Estilos para las secciones del menu (Cafés, Bebidas, Snacks)****/
+.main section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.main section h2 {
+    font-size: 35px;
+    color: #333333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid rgb(255, 190, 200);
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 /**** estilos para carrito.html****/
@@ -156,47 +189,49 @@ background-color: rgb(250,250,230);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
 }
 
 .seccion-carrito {
     background: white;
     width: 100%;
-    max-width: 600px;
-    padding: 40px;
-    border-radius: 30px;
+    max-width: 37.5rem;
+    padding: 2.5rem;
+    border-radius: 1.875rem;
     text-align: center;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.05);
 }
 
 .seccion-carrito h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     text-transform: uppercase;
     color: #333333;
 }
+
 /**** mensaje en caso de no agregar productos****/
 .msj-vacio {
     color: #888888;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .carrito-resumen {
-    border-top: 2px solid rgb(255, 190, 200);
-    padding-top: 20px;
+    border-top: 0.125rem solid rgb(255, 190, 200);
+    padding-top: 1.25rem;
 }
 
 .carrito-resumen p {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
 }
+
 /****boton para completar la compra****/
 .btn-comprar {
     display: inline-block;
     background-color: rgb(255, 190, 200);
     color: black;
-    padding: 15px 40px;
+    padding: 0.9375rem 2.5rem;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
@@ -209,18 +244,15 @@ background-color: rgb(250,250,230);
 
 .volver {
     display: block;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     color: #000000;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .volver:hover {
     text-decoration: underline;
 }
-
-/****estilos para contacto.html****/
-
 
 /**** Estilos para contacto.html ****/
 .main-contacto {
@@ -228,133 +260,80 @@ background-color: rgb(250,250,230);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
 }
 
 .seccion-contacto {
     background: white;
     width: 100%;
-    max-width: 500px; /* Ancho máximo de la tarjeta */
-    padding: 40px;
-    border-radius: 30px; /* Mantiene tu estilo redondeado */
+    max-width: 31.25rem;
+    padding: 2.5rem;
+    border-radius: 1.875rem;
     text-align: center;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.05);
 }
 
 .seccion-contacto h2 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     text-transform: uppercase;
     color: #333333;
 }
 
 .seccion-contacto p {
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
-/* Diseño del Formulario */
 .formulario-contacto {
     display: flex;
     flex-direction: column;
-    text-align: left; /* Alinea los textos a la izquierda */
+    text-align: left;
 }
 
 .grupo-input {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .grupo-input label {
     display: block;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     color: #333;
 }
 
-/* Cajas de texto (Inputs y Textarea) */
 .grupo-input input,
 .grupo-input textarea {
     width: 100%;
-    padding: 12px;
-    border: 2px solid #eee;
-    border-radius: 15px; /* Bordes suaves */
-    font-size: 16px;
+    padding: 0.75rem;
+    border: 0.125rem solid #eee;
+    border-radius: 0.9375rem;
+    font-size: 1rem;
     font-family: inherit;
     outline: none;
     transition: 0.3s;
-    box-sizing: border-box; /* Evita que el padding rompa el tamaño */
+    box-sizing: border-box;
 }
 
-/* Efecto cuando das clic para escribir */
 .grupo-input input:focus,
 .grupo-input textarea:focus {
-    border-color: rgb(255, 190, 200); /* Usa tu color pastel principal */
+    border-color: rgb(255, 190, 200);
 }
 
-/* Botón de Enviar */
 .btn-enviar {
     background-color: rgb(255, 190, 200);
     color: black;
     border: none;
-    padding: 15px;
-    border-radius: 50px;
-    font-size: 18px;
+    padding: 0.9375rem;
+    border-radius: 3.125rem;
+    font-size: 1.125rem;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .btn-enviar:hover {
     background-color: #f896a8;
-    transform: scale(1.05); /* Crece un 5% al pasar el mouse */
-}
-
-/**** Efecto de deslizamiento suave para toda la página ****/
-html {
-    scroll-behavior: smooth;
-}
-
-/**** Diseño de los enlaces "ver mas..." ****/
-.link-ver-mas {
-    font-size: 25px;
-    color: #ffffff;
-    cursor: pointer;
-    text-decoration: none; /* Esto quita la típica línea azul fea de los enlaces */
-    transition: 0.3s;
-}
-
-.link-ver-mas:hover {
-    color: rgb(255, 190, 200); /* Tu color pastel al pasar el mouse */
-}
-
-/**** Estilos para las secciones del menú (Cafés, Bebidas, Snacks) ****/
-
-
-.main section {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: 0 auto; 
-    text-align: center; 
-}
-
-
-.main section h2 {
-    font-size: 35px;
-    color: #333333;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  
-    border-bottom: 3px solid rgb(255, 190, 200);
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-
-.main section p {
-    font-size: 18px;
-    color: #555555;
-    line-height: 1.6; 
-    margin-bottom: 40px;
+    transform: scale(1.05);
 }
