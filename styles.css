@@ -1,4 +1,8 @@
-/****header****/
+*{
+    font-family: 'Arial', sans-serif;
+}
+
+/**** Header ****/
 .container-logo {
     display: flex;
     align-items: center;
@@ -7,24 +11,24 @@
 
 .container-logo h1 a {
     text-decoration: none;
-    color: #000;
-    font-size: 2.8125rem;
+    color: rgb(0, 0, 0);
+    font-size: 2.8rem;
     text-transform: uppercase;
-    letter-spacing: -0.0625rem;
+    letter-spacing: -0.1rem;
 }
 
-/****navbar****/
+/**** Navbar ****/
 .container-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 190, 200);
-    padding: 0.3125rem;
+    padding: 0.3rem;
 }
 
 .navbar-menu {
     display: flex;
-    gap: 1.25rem;
+    gap: 1.2rem;
 }
 
 .navbar-menu li {
@@ -33,26 +37,26 @@
 
 .navbar-menu a {
     text-decoration: none;
-    font-size: 1.25rem;
-    color: black;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .navbar-menu a:hover {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-/****banner****/
+/**** Banner ****/
 #banner {
-    background-image: linear-gradient(100deg, #1b1b1b, #36363683), url("img/food_truck.jpg");
-    height: 18.75rem;
+    background-image: linear-gradient(100deg, rgb(27, 27, 27), rgba(54, 54, 54, 0.5)), url("img/food_truck.jpg");
+    height: 18rem;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .contenido-banner {
@@ -60,27 +64,27 @@
 }
 
 .contenido-banner h1 {
-    color: white;
-    font-size: 3.125rem;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
     font-weight: 500;
 }
 
 .contenido-banner a {
-    margin-top: 0.625rem;
+    margin-top: 0.6rem;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(255, 190, 200);
-    padding: 0.75rem 1.25rem;
+    padding: 0.7rem 1.2rem;
     text-transform: uppercase;
-    border-radius: 1.25rem;
+    border-radius: 1.2rem;
 }
 
-/****main****/
+/**** Main ****/
 .main {
     background-color: rgb(250, 250, 230);
 }
 
-/****categorias****/
+/**** Categorias ****/
 #container-sec-categorias {
     display: flex;
     flex-direction: column;
@@ -93,7 +97,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    padding: 1.25rem;
+    padding: 1.2rem;
 }
 
 .carta {
@@ -112,29 +116,26 @@
 }
 
 .cafes_y_dulces {
-    background-image: linear-gradient(#00000080, #00000080),
-        url('img/cafe.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/cafe.png');
     background-size: cover;
     background-position: center;
 }
 
 .bebidas_y_helados {
-    background-image: linear-gradient(#00000080, #00000080),
-        url('img/bebida.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bebida.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .snacks_y_comida {
-    background-image: linear-gradient(#00000080, #00000080),
-        url('img/comida.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/comida.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .carta h3 {
     font-size: 2.5rem;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     text-transform: capitalize;
     position: relative;
     margin: 0;
@@ -143,8 +144,8 @@
 .carta h3::after {
     content: '';
     width: 2.5rem;
-    height: 0.125rem;
-    background-color: #fff;
+    height: 0.1rem;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     bottom: -1rem;
     left: 50%;
@@ -153,7 +154,7 @@
 
 .link-ver-mas {
     font-size: 1rem;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
@@ -164,17 +165,17 @@
     font-weight: bold;
 }
 
-/****Estilos para las secciones del menu (Cafés, Bebidas, Snacks)****/
+/**** Estilos Generales Menu ****/
 .main section {
     padding: 60px 20px;
     max-width: 1000px;
-    margin: 0 auto; 
-    text-align: center; 
+    margin: 0 auto;
+    text-align: center;
 }
 
 .main section h2 {
     font-size: 35px;
-    color: #333333;
+    color: rgb(51, 51, 51);
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -183,16 +184,12 @@
     padding-bottom: 10px;
 }
 
-:root {
-    --primary-color: rgb(255, 190, 200);
-}
-
-/**** Contenedor principal de la sección ****/
+/**** Menu y Productos ****/
 .menu {
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    gap: 3rem;             
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
     padding: 5rem 0;
 }
 
@@ -203,176 +200,143 @@
     margin-bottom: 2rem;
 }
 
-/**** Grid de Productos ****/
 .container-productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+    align-items: stretch;
 }
 
-/**** Tarjeta Individual ****/
 .carta-producto {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 2rem 3rem;
     border-radius: 0.5rem;
     cursor: pointer;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .carta-producto:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
-
-/**** Contenedor de imagen y textos ****/
-.container-img {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-.container-img img {
-    width: 100%;
-    margin-bottom: 1.5rem;
-}
-
-/**** Titulo del Producto ****/
-.container-img h3 {
-    font-weight: 400;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    font-family: sans-serif;
-    color: #333;
-    width: 100%;
-    text-align: center;
-}
-
-.container-img h3:hover {
-    color: var(--primary-color);
-}
-
-/**** Botón Añadir al Carrito ****/
-.add-cart {
-    border: 2px solid var(--primary-color);
-    padding: 1rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.add-cart:hover {
-    background-color: var(--primary-color);
-}
-
-.add-cart i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-}
-
-.add-cart:hover i {
-    color: #fff;
-}
-
-/**** Precio ****/
-.precio {
-    font-size: 1.7rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    color: #000;
-}
-
-
-.carta-producto:hover .discount {
-    background-color: #000;
-}
-
 
 .container-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     row-gap: 1rem;
+    align-items: center;
 }
 
 .container-img img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
     grid-column: 1 / -1;
 }
 
 .container-img h3 {
     grid-column: 1 / -1;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    min-height: 1px;
 }
 
-.add-cart {
+.agregar-carrito {
     grid-column: 1 / 2;
     justify-self: start;
-    margin-bottom: 0;
+    align-self: center;
+    border: 2px solid rgb(255, 190, 200);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: rgb(255, 190, 200);
+}
+
+.agregar-carrito i {
+    font-size: 1.5rem;
+    color: rgb(255, 190, 200);
+}
+
+.agregar-carrito:hover i {
+    color: rgb(255, 255, 255);
 }
 
 .precio {
     grid-column: 2 / 3;
     justify-self: end;
-    margin-bottom: 0;
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 0;
 }
 
-
-/**** estilos para carrito.html****/
+/**** Carrito.html ****/
 .main-carrito {
     min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.5rem 1.25rem;
+    padding: 2.5rem 1.2rem;
 }
 
 .seccion-carrito {
-    background: white;
+    background: rgb(255, 255, 255);
     width: 100%;
-    max-width: 37.5rem;
+    max-width: 37rem;
     padding: 2.5rem;
-    border-radius: 1.875rem;
+    border-radius: 1.9rem;
     text-align: center;
-    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.9rem 1.8rem rgba(0, 0, 0, 0.05);
 }
 
 .seccion-carrito h2 {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.2rem;
     text-transform: uppercase;
-    color: #333333;
+    color: rgb(51, 51, 51);
 }
 
-/**** mensaje en caso de no agregar productos****/
 .msj-vacio {
-    color: #888888;
-    margin-bottom: 1.875rem;
+    color: rgb(136, 136, 136);
+    margin-bottom: 1.8rem;
 }
 
 .carrito-resumen {
-    border-top: 0.125rem solid rgb(255, 190, 200);
-    padding-top: 1.25rem;
+    border-top: 0.1rem solid rgb(255, 190, 200);
+    padding-top: 1.2rem;
 }
 
 .carrito-resumen p {
     font-size: 1.5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.2rem;
 }
 
-/****boton para completar la compra****/
 .btn-comprar {
     display: inline-block;
-    background-color:white;
-    color: black;
-    padding: 0.9375rem 2.5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 0.9rem 2.5rem;
     text-decoration: none;
-    border-radius: 3.125rem;
+    border-radius: 3.1rem;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
+    border: 1px solid rgb(238, 238, 238);
 }
 
 .btn-comprar:hover {
@@ -382,44 +346,40 @@
 
 .volver {
     display: block;
-    margin-top: 1.25rem;
-    color: #000000;
+    margin-top: 1.2rem;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
 }
 
-.volver:hover {
-    text-decoration: underline;
-}
-
-/**** Estilos para contacto.html ****/
+/**** Contacto.html ****/
 .main-contacto {
     min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.5rem 1.25rem;
+    padding: 2.5rem 1.2rem;
 }
 
 .seccion-contacto {
-    background: white;
+    background: rgb(255, 255, 255);
     width: 100%;
-    max-width: 31.25rem;
+    max-width: 31rem;
     padding: 2.5rem;
-    border-radius: 1.875rem;
+    border-radius: 1.9rem;
     text-align: center;
-    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.9rem 1.8rem rgba(0, 0, 0, 0.05);
 }
 
 .seccion-contacto h2 {
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.6rem;
     text-transform: uppercase;
-    color: #333333;
+    color: rgb(51, 51, 51);
 }
 
 .seccion-contacto p {
-    color: #666;
-    margin-bottom: 1.875rem;
+    color: rgb(102, 102, 102);
+    margin-bottom: 1.8rem;
 }
 
 .formulario-contacto {
@@ -429,24 +389,23 @@
 }
 
 .grupo-input {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.2rem;
 }
 
 .grupo-input label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: rgb(51, 51, 51);
 }
 
 .grupo-input input,
 .grupo-input textarea {
     width: 100%;
-    padding: 0.75rem;
-    border: 0.125rem solid #eee;
-    border-radius: 0.9375rem;
+    padding: 0.7rem;
+    border: 0.1rem solid rgb(255, 255, 255);
+    border-radius: 0.9rem;
     font-size: 1rem;
-    font-family: inherit;
     outline: none;
     transition: 0.3s;
     box-sizing: border-box;
@@ -458,17 +417,17 @@
 }
 
 .btn-enviar {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 0.9375rem;
-    border-radius: 3.125rem;
-    font-size: 1.125rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.9rem;
+    border-radius: 3.1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 0.625rem;
+    margin-top: 0.6rem;
 }
 
 .btn-enviar:hover {
