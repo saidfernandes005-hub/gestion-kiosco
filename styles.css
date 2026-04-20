@@ -160,7 +160,7 @@
 }
 
 .link-ver-mas:hover {
-    color: #e3b04b;
+    color: rgb(255, 190, 200);
     font-weight: bold;
 }
 
@@ -365,7 +365,7 @@
 /****boton para completar la compra****/
 .btn-comprar {
     display: inline-block;
-    background-color: rgb(255, 190, 200);
+    background-color:white;
     color: black;
     padding: 0.9375rem 2.5rem;
     text-decoration: none;
@@ -376,7 +376,7 @@
 }
 
 .btn-comprar:hover {
-    background-color: #f896a8;
+    background-color: rgb(255, 190, 200);
     transform: scale(1.05);
 }
 
@@ -458,7 +458,7 @@
 }
 
 .btn-enviar {
-    background-color: rgb(255, 190, 200);
+    background-color: white;
     color: black;
     border: none;
     padding: 0.9375rem;
@@ -472,6 +472,6 @@
 }
 
 .btn-enviar:hover {
-    background-color: #f896a8;
+    background-color: rgb(255, 190, 200);
     transform: scale(1.05);
 }
