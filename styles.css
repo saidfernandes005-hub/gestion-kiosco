@@ -2,49 +2,52 @@
     font-family: 'Arial', sans-serif;
 }
 
-/**** Header ****/
-.container-logo {
+/**** Header  ****/
+.header-principal {
     display: flex;
+    justify-content: space-between; 
     align-items: center;
-    justify-content: center;
+    background-color: rgb(255, 190, 200); 
+    padding: 10px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+    position: sticky; 
+    top: 0;
+    z-index: 100;
 }
 
-.container-logo h1 a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    letter-spacing: -0.1rem;
+
+.logo-imagen {
+    height: 70px; 
+    width: auto;
+    transition: transform 0.3s ease;
 }
 
-/**** Navbar ****/
-.container-navbar {
+.logo-imagen:hover {
+    transform: scale(1.05); 
+}
+
+
+.menu-box .navbar-menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 190, 200);
-    padding: 0.3rem;
-}
-
-.navbar-menu {
-    display: flex;
-    gap: 1.2rem;
-}
-
-.navbar-menu li {
+    gap: 30px; 
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-menu a {
+
+.menu-box a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: rgb(0, 0, 0);
+    color: rgb(51, 51, 51); 
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
-.navbar-menu a:hover {
-    color: rgb(255, 255, 255);
+.menu-box a:hover {
+    color: rgb(255, 190, 200); 
 }
 
 /**** Banner ****/
@@ -491,4 +494,28 @@
     margin-top: 3rem;
     font-size: 0.9rem;
     color: rgb(130, 130, 130);
+}
+/**** logo  ****/
+.barra-menu-negra {
+    background-color: rgb(27, 27, 27); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+}
+
+.logo {
+    max-height: 80px; 
+    width: auto; 
+}
+
+.boton-comprar {
+    background-color: rgb(255, 190, 200); 
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: serif;
 }
