@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeteria</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
+
         <header class="header">
             <div class="container-logo">
                 <h1 class="logo"><a href="">Cafeteria AnitaSol</a></h1>
             </div>
             <div class="container-navbar">
                 <nav class="navbar container">
-                    <ul class="menu">
+                    <ul class="navbar-menu">
                         <li><a href="#hero">Inicio</a></li>
                         <li><a href="carrito.html">Carrito</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
@@ -39,14 +41,14 @@
                             Ver más
                         </a>
                     </article>
-                
+
                     <article class="carta bebidas_y_helados">
                         <h3>Bebidas y Helados</h3>
                         <a href="#bebidas_y_helados" class="link-ver-mas" aria-label="Ver más sobre Bebidas y Helados">
                             Ver más
                         </a>
                     </article>
-                
+
                     <article class="carta snacks_y_comida">
                         <h3>Snacks y Comida</h3>
                         <a href="#snacks_y_comida" class="link-ver-mas" aria-label="Ver más sobre Snacks y Comida">
@@ -56,20 +58,122 @@
                 </div>
             </section>
 
-            <section id="cafes_y_dulces">
-                <h2>Cafés y Dulces</h2>
-                <p>Disfruta de nuestra selección de granos recién tostados y acompáñalos con un trozo de torta artesanal. El equilibrio perfecto para tu tarde.</p>
-                </section>
+            <section class="menu" id="cafes">
+                <h2>Cafés</h2>
+                <div class="container-productos">
+                    <div class="carta-producto">
+                    <!-- Producto 1 -->
+                        <div class="container-img">
+                            <img src="img/" alt="Cafe Americano"/>
+                            <h3>Cafe Americano</h3>
+                            <span class="add-cart">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </span>
+                                <p class="precio">$2.500</p>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="carta-producto">
+                        <div class="container-img">
+                            <img src="img/" alt="Cafe Latte"/>
+                            <h3>Cafe Latte</h3>
+                            <span class="add-cart">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </span>
+                                <p class="precio">$3.000</p>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="carta-producto">
+                        <div class="container-img">
+                            <img src="img/" alt="Cafe Cappuccino"/>
+                            <h3>Cafe Cappuccino</h3>
+                            <span class="add-cart">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </span>
+                                <p class="precio">$3.500</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <section id="bebidas_y_helados">
+            <section class="menu" id="bebidas_y_helados">
                 <h2>Bebidas y Helados</h2>
-                <p>Refresca tu día con nuestros jugos naturales prensados en frío y copas de helado con sabores de temporada.</p>
-                </section>
+                <div class="container-productos">
+                    <div class="carta-producto">
+                    <!-- Producto 1 -->
+                        <div class="container-img">
+                            <img src="img/" alt="Limonada"/>
+                            <h3>Limonada</h3>
+                            <span class="add-cart">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </span>
+                                <p class="precio">$2.000</p>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="carta-producto">
+                        <div class="container-img">
+                            <img src="img/" alt="Té Helado"/>
+                            <h3>Té Helado</h3>
+                            <span class="add-cart">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </span>
+                                <p class="precio">$2.500</p>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="carta-producto">
+                        <div class="container-img">
+                            <img src="img/" alt="Helado de Vainilla"/>
+                            <h3>Helado de Vainilla</h3>
+                            <span class="add-cart">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </span>
+                                <p class="precio">$3.000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <section id="snacks_y_comida">
+            <section class="menu" id="snacks_y_comida">
                 <h2>Snacks y Comida</h2>
-                <p>¿Hambre a media mañana? Prueba nuestras empanadas horneadas y sándwiches preparados en el momento con ingredientes frescos.</p>
-                </section>
+                <div class="container-productos">
+                    <div class="carta-producto">
+                    <!-- Producto 1 -->
+                        <div class="container-img">
+                            <img src="img/Dorito.png" alt="Croissant"/>
+                            <h3>Doritos</h3>
+                            <span class="add-cart">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </span>
+                                <p class="precio">$1.500</p>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="carta-producto">
+                        <div class="container-img">
+                            <img src="img/ave_palta.png" alt="Sándwich de Jamón y Queso"/>
+                            <h3>Ave Palta</h3>
+                            <span class="add-cart">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </span>
+                                <p class="precio">$2.500</p>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="carta-producto">
+                        <div class="container-img">
+                            <img src="img/ensalada_cesar.png" alt="Ensalada César"/>
+                            <h3>Ensalada César</h3>
+                            <span class="add-cart">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </span>
+                                <p class="precio">$4.000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
