@@ -403,7 +403,7 @@
 .grupo-input textarea {
     width: 100%;
     padding: 0.7rem;
-    border: 0.1rem solid rgb(255, 255, 255);
+    border: 0.1rem solid rgb(220, 190, 200);
     border-radius: 0.9rem;
     font-size: 1rem;
     outline: none;
@@ -417,9 +417,9 @@
 }
 
 .btn-enviar {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 190, 200);
     color: rgb(0, 0, 0);
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 190, 200);
     padding: 0.9rem;
     border-radius: 3.1rem;
     font-size: 1.1rem;
