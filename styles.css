@@ -495,27 +495,3 @@
     font-size: 0.9rem;
     color: rgb(130, 130, 130);
 }
-/**** logo  ****/
-.barra-menu-negra {
-    background-color: rgb(27, 27, 27); 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 20px; 
-}
-
-.logo {
-    max-height: 80px; 
-    width: auto; 
-}
-
-.boton-comprar {
-    background-color: rgb(255, 190, 200); 
-    color: black;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: serif;
-}
