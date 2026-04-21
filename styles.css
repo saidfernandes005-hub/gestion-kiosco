@@ -118,7 +118,6 @@
     transform: scale(1.02);
 }
 
-.cafes_y_dulces {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/cafe.png');
     background-size: cover;
     background-position: center;
